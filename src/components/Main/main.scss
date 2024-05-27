@@ -1,0 +1,194 @@
+.current__weather-info {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 50px;
+    grid-auto-rows: 300px;
+
+    &-block {
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 5px 25px -3px rgba(200, 200, 200, 0.926);
+        background: rgb(255, 255, 255);
+        position: relative;
+
+        &-temp {
+            color: rgb(71, 147, 255);
+            font-family: 'Montserrat';
+            font-size: 96px;
+            font-weight: 500;
+            line-height: 117px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &-day {
+            color: rgb(0, 0, 0);
+            font-family: 'Montserrat';
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 49px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &-data {
+            color: rgb(147, 156, 176);
+            font-family: 'Montserrat';
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-top: 14px;
+        }
+
+        &-statusimg {
+            position: absolute;
+            top: 46px;
+            right: 20px;
+        }
+
+        &-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        &:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        &-item {
+            align-items: center;
+            display: flex;
+            gap: 20px;
+            z-index: 1;
+
+            &-icon {
+                width: 38px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
+                border-radius: 50%;
+                background: rgb(255, 255, 255);
+            }
+
+            &-data {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                width: 100%;
+                max-width: 154px;
+
+                & p {
+                    color: rgb(147, 156, 176);
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0%;
+                    text-align: right;
+                }
+
+                & span {
+                    color: rgb(0, 0, 0);
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 17px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.daily__weather-data {
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 2px 5px 25px -3px rgba(200, 200, 200, 0.926);
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-title{
+        padding: 40px 0 0 20px;
+        font-weight: 300;
+        font-size: 22px;
+    }
+
+    &-item {
+        padding: 12px;
+        border-radius: 10px;
+        background: rgba(71, 147, 255, 0.2);
+        width: 100%;
+        max-width: 150px;
+
+        &-day {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &-date {
+            color: rgb(147, 156, 176);
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-top: 7px;
+            margin-bottom: 12px;
+        }
+
+        & img {
+            width: 45px;
+            height: 45px;
+        }
+
+        &-daytemp {
+            color: rgb(0, 0, 0);
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-top: 15px;
+        }
+
+        &-nighttemp {
+            color: rgb(147, 156, 176);
+            font-family: Montserrat;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+
+        &-status {
+            color: rgb(147, 156, 176);
+            font-family: Montserrat;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-top: 6px;
+        }
+    }
+}
